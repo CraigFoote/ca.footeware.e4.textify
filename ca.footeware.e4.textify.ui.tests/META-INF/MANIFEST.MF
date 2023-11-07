@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: textify UI Tests
+Bundle-SymbolicName: ca.footeware.e4.textify.ui.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Footeware.ca
+Fragment-Host: ca.footeware.e4.textify.ui;bundle-version="1.0.0"
+Import-Package: org.junit.jupiter.api;version="5.9.1"
+Automatic-Module-Name: ca.footeware.e4.textify.ui.tests
+Bundle-RequiredExecutionEnvironment: JavaSE-20
+Require-Bundle: org.eclipse.swtbot.swt.finder;bundle-version="4.1.0",
+ org.slf4j.api;bundle-version="1.7.30"

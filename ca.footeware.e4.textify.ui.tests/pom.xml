@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>ca.footeware.e4.textify.ui.tests</artifactId>
+	<packaging>eclipse-test-plugin</packaging>
+
+	<parent>
+		<groupId>ca.footeware.e4.textify</groupId>
+		<artifactId>ca.footeware.e4.textify.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../ca.footeware.e4.textify.parent</relativePath>
+	</parent>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<useUIHarness>true</useUIHarness>
+					<useUIThread>false</useUIThread>
+					<application>org.eclipse.e4.ui.workbench.swt.E4Application</application>
+					<argLine>-Dorg.eclipse.swtbot.keyboard.layout=EN_US</argLine>
+					<appArgLine>-applicationXMI ca.footeware.e4.application.ui/Application.e4xmi</appArgLine>
+					<dependencies>
+						<dependency>
+							<groupId>ca.footeware.e4.application</groupId>
+							<type>p2-installable-unit</type>
+							<artifactId>ca.footeware.e4.application.feature.feature.group</artifactId>
+							<version>1.10.0</version>
+						</dependency>
+					</dependencies>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

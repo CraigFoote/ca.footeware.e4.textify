@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/ca.footeware.e4.textify.feature_0.0.0.jar" id="ca.footeware.e4.textify.feature" version="0.0.0">
+      <category name="ca.footeware.e4.textify"/>
+   </feature>
+   <category-def name="ca.footeware.e4.textify" label="textify"/>
+</site>

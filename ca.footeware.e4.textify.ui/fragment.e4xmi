@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_BxaXACerEeWxCPrV0pAZQQ">
+  <imports xsi:type="menu:Menu" xmi:id="_uZghMHvrEe6Q9oO7VpZLYg" elementId="ca.footeware.e4.application.ui.menu.showview"/>
+  <imports xsi:type="advanced:PerspectiveStack" xmi:id="_Fy4bYHvsEe6Q9oO7VpZLYg" elementId="ca.footeware.e4.application.perspectivestack"/>
+  <imports xsi:type="menu:ToolBarContribution" xmi:id="_Hbr6sHw4Ee69SYlhCdBxNw" elementId="ca.footeware.e4.application.ui.toolbarcontribution.0"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_EI7oACerEeWxCPrV0pAZQQ" featurename="descriptors" parentElementId="ca.footeware.e4.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_KMklcCerEeWxCPrV0pAZQQ" elementId="ca.footeware.e4.textify.ui.partdescriptor.textifyview" label="textify" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/textify-24.png" tooltip="" allowMultiple="true" category="" closeable="true" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.parts.TextifyView">
+      <tags>View</tags>
+      <tags>categoryTag:Sample Category</tags>
+      <menus xmi:id="_pPL9EHzKEe612vAQEStsEA" elementId="ca.footeware.e4.textify.ui.menu.0">
+        <tags>ViewMenu</tags>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_qm7zIHzKEe612vAQEStsEA" elementId="ca.footeware.e4.textify.ui.directmenuitem.preferences" label="Preferences" tooltip="Open preferences dialog" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.PreferencesHandler"/>
+      </menus>
+      <toolbar xmi:id="_IiUAoHvtEe6Q9oO7VpZLYg" elementId="ca.footeware.e4.textify.ui.toolbar.0"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_5q25oHvrEe6Q9oO7VpZLYg" featurename="children" parentElementId="ca.footeware.e4.application.perspectivestack">
+    <elements xsi:type="advanced:Perspective" xmi:id="_2MGeUHvsEe6Q9oO7VpZLYg" elementId="ca.footeware.e4.textify.ui.perspective.textify" label="textify" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/textify-24.png">
+      <children xsi:type="basic_1:PartSashContainer" xmi:id="_84KtsHvsEe6Q9oO7VpZLYg" elementId="ca.footeware.e4.textify.ui.partsashcontainer.0">
+        <children xsi:type="basic_1:PartStack" xmi:id="_An_OYHvtEe6Q9oO7VpZLYg" elementId="ca.footeware.e4.textify.ui.partstack.0">
+          <children xsi:type="basic_1:Part" xmi:id="_BvgQEHvtEe6Q9oO7VpZLYg" elementId="ca.footeware.e4.textify.ui.part.textifyview" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.parts.TextifyView" label="textify" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/textify-24.png" closeable="true">
+            <toolbar xmi:id="_v2VI0HzNEe612vAQEStsEA" elementId="ca.footeware.e4.textify.ui.toolbar.1"/>
+          </children>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_TotekHvzEe6Q9oO7VpZLYg" featurename="children" parentElementId="ca.footeware.e4.application.ui.menu.showview">
+    <elements xsi:type="menu:DirectMenuItem" xmi:id="_1nWuUHvzEe6Q9oO7VpZLYg" elementId="ca.footeware.e4.textify.ui.directmenuitem.showview" label="textify" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.ShowViewHandler"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ah82YHw3Ee69SYlhCdBxNw" featurename="children" parentElementId="ca.footeware.e4.application.toolbar" positionInList="first">
+    <elements xsi:type="menu:DirectToolItem" xmi:id="_BQXaMHwzEe69SYlhCdBxNw" elementId="ca.footeware.e4.textify.ui.directtoolitem.new" label="New" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/new-16.png" tooltip="Create a new document" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.NewHandler"/>
+    <elements xsi:type="menu:DirectToolItem" xmi:id="_N9rBAHw4Ee69SYlhCdBxNw" elementId="ca.footeware.e4.textify.ui.directtoolitem.open" label="Open" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/open-16.png" tooltip="Open an existing document" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.OpenHandler"/>
+    <elements xsi:type="menu:DirectToolItem" xmi:id="_Zj42MHw4Ee69SYlhCdBxNw" elementId="ca.footeware.e4.textify.ui.directtoolitem.save" label="Save" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/save-16.png" tooltip="Save current document" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.SaveHandler"/>
+    <elements xsi:type="menu:DirectToolItem" xmi:id="_jivE8Hw4Ee69SYlhCdBxNw" elementId="ca.footeware.e4.textify.ui.directtoolitem.saveas" label="Save As" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/save-as-16.png" tooltip="Save current document under new name" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.SaveAsHandler"/>
+    <elements xsi:type="menu:ToolBarSeparator" xmi:id="_5aqagHw4Ee69SYlhCdBxNw" elementId="ca.footeware.e4.textify.ui.toolbarseparator.0"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_q727sHxFEe6QFaVtLsC0Qg" featurename="children" parentElementId="org.eclipse.ui.file" positionInList="first">
+    <elements xsi:type="menu:MenuSeparator" xmi:id="_u4JyIHxFEe6QFaVtLsC0Qg" elementId="ca.footeware.e4.textify.ui.menuseparator.0"/>
+    <elements xsi:type="menu:DirectMenuItem" xmi:id="_OTzOwHxIEe6QFaVtLsC0Qg" elementId="ca.footeware.e4.textify.ui.directmenuitem.saveas" label="Save As" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/save-as-16.png" tooltip="Save current text as new document" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.SaveAsHandler"/>
+    <elements xsi:type="menu:DirectMenuItem" xmi:id="_ILhB4HxIEe6QFaVtLsC0Qg" elementId="ca.footeware.e4.textify.ui.directmenuitem.save" label="Save" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/save-16.png" tooltip="Save current document" mnemonics="S" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.SaveHandler"/>
+    <elements xsi:type="menu:DirectMenuItem" xmi:id="_CAV5EHxIEe6QFaVtLsC0Qg" elementId="ca.footeware.e4.textify.ui.directmenuitem.open" label="Open" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/open-16.png" tooltip="Open an existing document" mnemonics="O" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.OpenHandler"/>
+    <elements xsi:type="menu:DirectMenuItem" xmi:id="_ytnn0HxFEe6QFaVtLsC0Qg" elementId="ca.footeware.e4.textify.ui.directmenuitem.new" label="New" iconURI="platform:/plugin/ca.footeware.e4.textify.ui/icons/new-16.png" tooltip="Create a new document" mnemonics="N" contributionURI="bundleclass://ca.footeware.e4.textify.ui/ca.footeware.e4.textify.ui.handlers.NewHandler"/>
+    <elements xsi:type="menu:MenuSeparator" xmi:id="_6G5tEHxGEe6QFaVtLsC0Qg" elementId="ca.footeware.e4.textify.ui.menuseparator.1"/>
+  </fragments>
+</fragment:ModelFragments>
